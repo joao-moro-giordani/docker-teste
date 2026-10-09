@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Tarefa;
 use Illuminate\Http\Request;
 
 class TarefaController extends Controller
@@ -11,7 +12,7 @@ class TarefaController extends Controller
      */
     public function index()
     {
-        //
+        return "ok";
     }
 
     /**
@@ -27,13 +28,13 @@ class TarefaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request);
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Tarefa $tarefa)
     {
         //
     }
@@ -41,7 +42,7 @@ class TarefaController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Tarefa $tarefa)
     {
         //
     }
@@ -49,7 +50,7 @@ class TarefaController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Tarefa $tarefa)
     {
         //
     }
@@ -57,7 +58,7 @@ class TarefaController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Tarefa $tarefa)
     {
         //
     }
